@@ -1,0 +1,1 @@
+![](md_image/test_result.png)
