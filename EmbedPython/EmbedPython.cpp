@@ -32,7 +32,8 @@ int main()
 	std::cout << "call python script file" << std::endl;
 	const char* scriptName = "call_python_file.py";
 	const char* scriptPath = "../PyrthonScripts/call_python_file.py";
-	wchar_t* argv[] = { L"E:/CppProject/UseCPI/EmbedPython/DataFile/google.mp4", L"1" };
+	// 绝对路径
+	wchar_t* argv[] = { L"E:/CppProject/EmbedPython/DataFile/google.mp4", L"1" };
 	//初始化宽字节字符指针数组,将其首地址赋值给二级指针
 
 	int callState = callPythonFile(scriptName, scriptPath, 2, argv);
